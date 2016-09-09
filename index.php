@@ -11,7 +11,10 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        echo "hello world";
+            include('student.php');
+            $students = array();
+            foreach($students as $student)
+            echo $student->toString();
         ?>
     </body>
 </html>
